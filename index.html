@@ -1,600 +1,977 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LICsaathi - Insurance Agency</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.svg"
+      type="image/svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="fas fa-shield-alt me-2"></i>LICsaathi 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fas fa-shield-alt me-2"></i>
+          LICsaathi
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
+    <!-- Hero Section -->
     <header id="home" class="hero-section bg-gradient">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-white">
-                    <h1 class="display-4 fw-bold mb-4">Secure Your Future Today</h1>
-                    <p class="lead mb-4">Your trusted partner for comprehensive insurance solutions tailored to your unique needs.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-warning btn-lg fw-bold">
-                            Get a Quote <i class="fas fa-arrow-right ms-2"></i>
-                        </a>
-                        <a href="#services" class="btn btn-outline-light btn-lg">
-                            Our Services
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <img src="assets/images/hero-image.jpg" alt="Insurance Protection" class="img-fluid rounded-4 shadow">
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-white">
+            <h1 class="display-4 fw-bold mb-4">Secure Your Future Today</h1>
+            <p class="lead mb-4">
+              Your trusted partner for comprehensive insurance solutions
+              tailored to your unique needs.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-warning btn-lg fw-bold">
+                Get a Quote
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+              <a href="#services" class="btn btn-outline-dark btn-lg">
+                Our Services
+              </a>
             </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <img
+              src="assets/images/hero-image.jpg"
+              alt="Insurance Protection"
+              class="img-fluid rounded-4 shadow"
+            />
+          </div>
         </div>
+      </div>
     </header>
 
+    <!-- Features Section -->
     <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h3>Trusted Advisors</h3>
-                        <p>Over 15 years of experience helping clients find their perfect coverage.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>Fast Service</h3>
-                        <p>Quick quotes and easy application process with 24/7 customer support.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card text-center p-4">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <h3>Best Rates</h3>
-                        <p>We compare policies from over 50 carriers to find you the best value.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card text-center p-4">
+              <div class="icon-wrapper">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h3>Trusted Advisors</h3>
+              <p>
+                Over 15 years of experience helping clients find their perfect
+                coverage.
+              </p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card text-center p-4">
+              <div class="icon-wrapper">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3>Fast Service</h3>
+              <p>
+                Quick quotes and easy application process with 24/7 customer
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card text-center p-4">
+              <div class="icon-wrapper">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <h3>Best Rates</h3>
+              <p>
+                We compare policies from over 50 carriers to find you the best
+                value.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="section-title">Our Insurance Services</h2>
-                    <p class="section-subtitle">Comprehensive protection for every aspect of your life</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <h3 class="card-title">Life Insurance</h3>
-                            <p class="card-text">Secure your family's financial future with customized life insurance plans that provide peace of mind.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Term Life Insurance</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Whole Life Insurance</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Universal Life Insurance</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3 class="card-title">Investment Plans</h3>
-                            <p class="card-text">Grow your wealth with strategic investment plans that maximize returns while managing risk.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Fixed Deposits</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Equity-Linked Plans</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Unit-Linked Insurance Plans</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-umbrella"></i>
-                            </div>
-                            <h3 class="card-title">Retirement Plans</h3>
-                            <p class="card-text">Prepare for a comfortable retirement with our flexible pension schemes and retirement solutions.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Pension Plans</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Annuity Options</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Retirement Income Products</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-car"></i>
-                            </div>
-                            <h3 class="card-title">Auto Insurance</h3>
-                            <p class="card-text">Protect your vehicles with comprehensive coverage that keeps you safe on the road.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Liability Coverage</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Collision Coverage</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Comprehensive Coverage</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <h3 class="card-title">Home Insurance</h3>
-                            <p class="card-text">Safeguard your home and belongings against damage, theft, and unexpected events.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Property Coverage</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Liability Protection</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Additional Living Expenses</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card service-card h-100">
-                        <div class="card-body">
-                            <div class="service-icon">
-                                <i class="fas fa-hospital-user"></i>
-                            </div>
-                            <h3 class="card-title">Health Insurance</h3>
-                            <p class="card-text">Get quality healthcare with medical insurance plans that cover your health needs.</p>
-                            <ul class="service-features">
-                                <li><i class="fas fa-check me-2 text-primary"></i>Hospitalization Coverage</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Preventive Care</li>
-                                <li><i class="fas fa-check me-2 text-primary"></i>Wellness Programs</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#contact" class="btn btn-outline-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">Our Insurance Services</h2>
+            <p class="section-subtitle">
+              Comprehensive protection for every aspect of your life
+            </p>
+          </div>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3 class="card-title">Life Insurance</h3>
+                <p class="card-text">
+                  Secure your family's financial future with customized life
+                  insurance plans that provide peace of mind.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Term Life Insurance
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Whole Life Insurance
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Universal Life Insurance
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="card-title">Investment Plans</h3>
+                <p class="card-text">
+                  Grow your wealth with strategic investment plans that maximize
+                  returns while managing risk.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Fixed Deposits
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Equity-Linked Plans
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Unit-Linked Insurance Plans
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-umbrella"></i>
+                </div>
+                <h3 class="card-title">Retirement Plans</h3>
+                <p class="card-text">
+                  Prepare for a comfortable retirement with our flexible pension
+                  schemes and retirement solutions.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Pension Plans
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Annuity Options
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Retirement Income Products
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-car"></i>
+                </div>
+                <h3 class="card-title">Auto Insurance</h3>
+                <p class="card-text">
+                  Protect your vehicles with comprehensive coverage that keeps
+                  you safe on the road.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Liability Coverage
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Collision Coverage
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Comprehensive Coverage
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <h3 class="card-title">Home Insurance</h3>
+                <p class="card-text">
+                  Safeguard your home and belongings against damage, theft, and
+                  unexpected events.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Property Coverage
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Liability Protection
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Additional Living Expenses
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-icon">
+                  <i class="fas fa-hospital-user"></i>
+                </div>
+                <h3 class="card-title">Health Insurance</h3>
+                <p class="card-text">
+                  Get quality healthcare with medical insurance plans that cover
+                  your health needs.
+                </p>
+                <ul class="service-features">
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Hospitalization Coverage
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Preventive Care
+                  </li>
+                  <li>
+                    <i class="fas fa-check me-2 text-primary"></i>
+                    Wellness Programs
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="#contact" class="btn btn-outline-primary">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img src="assets/images/life.jpg" alt="About Wealth Guard" class="img-fluid rounded-4 shadow">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="assets/images/life.jpg"
+              alt="About Wealth Guard"
+              class="img-fluid rounded-4 shadow"
+            />
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <h2 class="section-title">About Wealth Guard</h2>
+            <p class="section-subtitle">
+              Your trusted partner in financial security since 2010
+            </p>
+            <p>
+              LIC Saathi was founded with a simple mission: to provide
+              accessible and comprehensive insurance solutions that truly
+              protect what matters most to our clients.
+            </p>
+            <p>
+              Our team of experienced advisors works closely with each client to
+              understand their unique needs and develop personalized protection
+              strategies that evolve with their life journey.
+            </p>
+
+            <div class="row mt-4 g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="stat-icon me-3">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-0">10,000+</h4>
+                    <p class="mb-0">Satisfied Clients</p>
+                  </div>
                 </div>
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <h2 class="section-title">About Wealth Guard</h2>
-                    <p class="section-subtitle">Your trusted partner in financial security since 2010</p>
-                    <p>Wealth Guard was founded with a simple mission: to provide accessible and comprehensive insurance solutions that truly protect what matters most to our clients.</p>
-                    <p>Our team of experienced advisors works closely with each client to understand their unique needs and develop personalized protection strategies that evolve with their life journey.</p>
-                    
-                    <div class="row mt-4 g-3">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="stat-icon me-3">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">10,000+</h4>
-                                    <p class="mb-0">Satisfied Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="stat-icon me-3">
-                                    <i class="fas fa-file-signature"></i>
-                                </div>
-                                <div>
-                                    <h4 class="mb-0">25,000+</h4>
-                                    <p class="mb-0">Policies Issued</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <div class="stat-icon me-3">
+                    <i class="fas fa-file-signature"></i>
+                  </div>
+                  <div>
+                    <h4 class="mb-0">25,000+</h4>
+                    <p class="mb-0">Policies Issued</p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section id="testimonials" class="py-5 testimonials-section">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="section-title">What Our Clients Say</h2>
-                    <p class="section-subtitle">Hear from the people who trust us with their insurance needs</p>
-                </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-12">
-                    <div class="testimonial-carousel">
-                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row g-4 justify-content-center">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="testimonial-card text-center">
-                                                <div class="testimonial-author">
-                                                    <img src="https://picsum.photos/100?random=1" alt="Client" class="testimonial-img rounded-circle mb-3">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <p class="mb-3">"Wealth Guard helped me secure a comfortable future for my family. 
-                                                        Their agents were incredibly professional and took the time to understand my specific needs."</p>
-                                                    <div class="rating mb-2">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <h5 class="mb-0">Arun Kumar</h5>
-                                                    <small>Life Insurance Client</small>
-                                               <!-- <img src="assets/images/investment.jpg"> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="testimonial-card text-center">
-                                                <div class="testimonial-author">
-                                                <img src="https://picsum.photos/100?random=2" alt="Client" class="testimonial-img rounded-circle mb-3">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <p class="mb-3">"I highly recommend Wealth Guard for investment plans. The returns have been impressive, and they've helped me build a solid portfolio for my retirement goals."</p>
-                                                    <div class="rating mb-2">
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <h5 class="mb-0">Shreya Sharma</h5>
-                                                    <small>Investment Client</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                                <span class="carousel-control-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">
+              Hear from the people who trust us with their insurance needs
+            </p>
+          </div>
         </div>
-    </section>
-    
 
+        <div class="row">
+          <div class="col-12">
+            <div class="testimonial-carousel">
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row g-4 justify-content-center">
+                      <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card text-center">
+                          <div class="testimonial-author">
+                            <img
+                              src="./assets/images/person-1.jpeg"
+                              alt="Client"
+                              class="testimonial-img rounded-circle mb-3"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="right"
+                              data-bs-html="true"
+                              data-bs-title="
+                              <div class='text-start w-full space-y-1'>
+                                <div class='d-flex justify-content-between'>
+                                  <strong>Monthly Deposit</strong>
+                                  <span>₹2,500</span>
+                                </div>
+                                <div class='d-flex justify-content-between'>
+                                  <strong>Tenure</strong>
+                                  <span>18 years</span>
+                                </div>
+                                <div class='d-flex  gap-1 justify-content-between'>
+                                  <strong>Total Investment</strong>
+                                  <span>₹5,40,000</span>
+                                </div>
+                                <div class='d-flex justify-content-between'>
+                                  <strong>Maturity</strong>
+                                  <span>₹7,80,000</span>
+                                </div>
+                                <div class='d-flex gap-1 justify-content-between'>
+                                  <strong>Insurance Cover</strong>
+                                  <span>₹4,00,000</span>
+                                </div>
+                              </div>"
+                            />
+                          </div>
+                          <div class="testimonial-content">
+                            <p class="mb-3">
+                              "Wealth Guard helped me secure a comfortable
+                              future for my family. Their agents were incredibly
+                              professional and took the time to understand my
+                              specific needs."
+                            </p>
+                            <div class="rating mb-2">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="mb-0">Arun Kumar</h5>
+                            <small> Life Insurance Client </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card text-center">
+                          <div class="testimonial-author">
+                            <img
+                              src="./assets/images/person-2.jpeg"
+                              alt="Client"
+                              class="testimonial-img rounded-circle mb-3"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="right"
+                              data-bs-html="true"
+                              data-bs-title="
+                                <div class='text-start w-full space-y-1'>
+                                  <div class='d-flex justify-content-between'>
+                                    <strong>Monthly Deposit</strong> <span>₹3,000</span>
+                                  </div>
+                                  <div class='d-flex justify-content-between'>
+                                    <strong>Tenure</strong> <span>20 years</span>
+                                  </div>
+                                  <div class='d-flex justify-content-between'>
+                                    <strong>Investment</strong> <span>₹7,20,000</span>
+                                  </div>
+                                  <div class='d-flex justify-content-between'>
+                                    <strong>Maturity</strong> <span>₹9,50,000</span>
+                                  </div>
+                                  <div class='d-flex  gap-1 justify-content-between'>
+                                    <strong>Insurance Cover</strong> <span>₹5,00,000</span>
+                                  </div>
+                                </div>
+                              "
+                            />
+                          </div>
+                          <div class="testimonial-content">
+                            <p class="mb-3">
+                              "I highly recommend LIC Saathi for investment
+                              plans. The returns have been impressive, and
+                              they've helped me build a solid portfolio for my
+                              retirement goals."
+                            </p>
+                            <div class="rating mb-2">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="mb-0">Shreya Sharma</h5>
+                            <small>Investment Client</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-icon" aria-hidden="true"
+                    ><i class="fas fa-chevron-left"></i
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-icon" aria-hidden="true"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
     <section class="py-5 cta-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="text-white mb-4">Ready to secure your future?</h2>
-                    <p class="text-white mb-4">Get a free consultation with our insurance experts today.</p>
-                    <a href="#contact" class="btn btn-warning btn-lg fw-bold">Get Started <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="text-white mb-4">Ready to secure your future?</h2>
+            <p class="text-white mb-4">
+              Get a free consultation with our insurance experts today.
+            </p>
+            <a href="#contact" class="btn btn-warning btn-lg fw-bold"
+              >Get Started <i class="fas fa-arrow-right ms-2"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-5">
-        <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="section-title">Contact Us</h2>
-                    <p class="section-subtitle">Get in touch with our expert advisors today</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-5">
-                    <div class="contact-info">
-                        <h3>Let's Connect</h3>
-                        <p>Have questions about insurance or want to schedule a consultation? Fill out the form or contact us directly.</p>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h5>Our Office</h5>
-                                <p>123 Insurance Plaza, Financial District<br>Bokaro, Jharkhand 400001</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div>
-                                <h5>Call Us</h5>
-                                <p>+91 94315 29347<br>+91 94315 21380</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h5>Email Us</h5>
-                                <p>lahiya@gmail.com<br>wakilchand@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="social-links mt-4">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-7">
-                    <div class="contact-form-card">
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" placeholder="Your Phone">
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="service" aria-label="Service">
-                                            <option selected disabled>Select a service</option>
-                                            <option value="life">Life Insurance</option>
-                                            <option value="investment">Investment Plans</option>
-                                            <option value="retirement">Retirement Plans</option>
-                                            <option value="health">Health Insurance</option>
-                                            <option value="other">Other Services</option>
-                                        </select>
-                                        <label for="service">Service Interested In</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <select class="form-select" id="state" aria-label="State">
-                                            <option selected disabled>Select a State</option>
-                                            <option value="andhra_pradesh">Andhra Pradesh</option>
-                                            <option value="arunachal_pradesh">Arunachal Pradesh</option>
-                                            <option value="assam">Assam</option>
-                                            <option value="bihar">Bihar</option>
-                                            <option value="chhattisgarh">Chhattisgarh</option>
-                                            <option value="goa">Goa</option>
-                                            <option value="gujarat">Gujarat</option>
-                                            <option value="haryana">Haryana</option>
-                                            <option value="himachal_pradesh">Himachal Pradesh</option>
-                                            <option value="jharkhand">Jharkhand</option>
-                                            <option value="karnataka">Karnataka</option>
-                                            <option value="kerala">Kerala</option>
-                                            <option value="madhya_pradesh">Madhya Pradesh</option>
-                                            <option value="maharashtra">Maharashtra</option>
-                                            <option value="manipur">Manipur</option>
-                                            <option value="meghalaya">Meghalaya</option>
-                                            <option value="mizoram">Mizoram</option>
-                                            <option value="nagaland">Nagaland</option>
-                                            <option value="odisha">Odisha</option>
-                                            <option value="punjab">Punjab</option>
-                                            <option value="rajasthan">Rajasthan</option>
-                                            <option value="sikkim">Sikkim</option>
-                                            <option value="tamil_nadu">Tamil Nadu</option>
-                                            <option value="telangana">Telangana</option>
-                                            <option value="tripura">Tripura</option>
-                                            <option value="uttar_pradesh">Uttar Pradesh</option>
-                                            <option value="uttarakhand">Uttarakhand</option>
-                                            <option value="west_bengal">West Bengal</option>
-                                            <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
-                                            <option value="chandigarh">Chandigarh</option>
-                                            <option value="dadra_nagar_haveli">Dadra and Nagar Haveli and Daman and Diu</option>
-                                            <option value="delhi">Delhi</option>
-                                            <option value="jammu_kashmir">Jammu and Kashmir</option>
-                                            <option value="ladakh">Ladakh</option>
-                                            <option value="lakshadweep">Lakshadweep</option>
-                                            <option value="puducherry">Puducherry</option>
-                                        </select>
-                                        <label for="state">Select Your State</label>
-                                    </div>
-                                </div>                                
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
-                                        <label for="message">Your Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="consent" required>
-                                        <label class="form-check-label" for="consent">
-                                            I agree to the privacy policy and consent to being contacted about insurance services.
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary btn-lg">
-                                        Send Message <i class="fas fa-paper-plane ms-2"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">
+              Get in touch with our expert advisors today
+            </p>
+          </div>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-info">
+              <h3>Let's Connect</h3>
+              <p>
+                Have questions about insurance or want to schedule a
+                consultation? Fill out the form or contact us directly.
+              </p>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h5>Our Office</h5>
+                  <p>
+                    123 Insurance Plaza, Financial District<br />Bokaro,
+                    Jharkhand 400001
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h5>Call Us</h5>
+                  <p>+91 94315 29347<br />+91 94315 21380</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h5>Email Us</h5>
+                  <p>lahiya@gmail.com<br />wakilchand@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="social-links mt-4">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form-card">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        name="phone"
+                        id="phone"
+                        placeholder="Your Phone"
+                      />
+                      <label for="phone">Your Phone</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        name="service"
+                        id="service"
+                        aria-label="Service"
+                      >
+                        <option selected disabled>Select a service</option>
+                        <option value="life">Life Insurance</option>
+                        <option value="investment">Investment Plans</option>
+                        <option value="retirement">Retirement Plans</option>
+                        <option value="health">Health Insurance</option>
+                        <option value="other">Other Services</option>
+                      </select>
+                      <label for="service">Service Interested In</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        name="state"
+                        id="state"
+                        aria-label="State"
+                      >
+                        <option selected disabled>Select a State</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="arunachal_pradesh">
+                          Arunachal Pradesh
+                        </option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal_pradesh">
+                          Himachal Pradesh
+                        </option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="nagaland">Nagaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="telangana">Telangana</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="west_bengal">West Bengal</option>
+                        <option value="andaman_nicobar">
+                          Andaman and Nicobar Islands
+                        </option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="dadra_nagar_haveli">
+                          Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+                        <option value="delhi">Delhi</option>
+                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                        <option value="ladakh">Ladakh</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="puducherry">Puducherry</option>
+                      </select>
+                      <label for="state">Select Your State</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        id="message"
+                        placeholder="Your Message"
+                        style="height: 150px"
+                        required
+                      ></textarea>
+                      <label for="message">Your Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="consent"
+                        id="consent"
+                        required
+                      />
+                      <label class="form-check-label" for="consent">
+                        I agree to the privacy policy and consent to being
+                        contacted about insurance services.
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <input type="hidden" name="access_key" value="" />
+                    <input
+                      type="checkbox"
+                      name="botcheck"
+                      class="hidden"
+                      style="display: none"
+                    />
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      Send Message
+                      <i class="fas fa-paper-plane ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="footer pt-5">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-about">
-                        <h3 class="text-white mb-4"><i class="fas fa-shield-alt me-2"></i>WEALTH GUARD</h3>
-                        <p>Your trusted partner for comprehensive insurance solutions tailored to your unique needs.</p>
-                        <div class="footer-social mt-4">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-6">
-                    <div class="footer-links">
-                        <h4>Quick Links</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#home"><i class="fas fa-angle-right me-2"></i>Home</a></li>
-                            <li><a href="#about"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
-                            <li><a href="#services"><i class="fas fa-angle-right me-2"></i>Services</a></li>
-                            <li><a href="#testimonials"><i class="fas fa-angle-right me-2"></i>Testimonials</a></li>
-                            <li><a href="#contact"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-links">
-                        <h4>Our Services</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Life Insurance</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Investment Plans</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Retirement Plans</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Health Insurance</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Auto Insurance</a></li>
-                            <li><a href="#"><i class="fas fa-angle-right me-2"></i>Home Insurance</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-newsletter">
-                        <h4>Subscribe to Our Newsletter</h4>
-                        <p>Get the latest updates on insurance products and financial planning tips.</p>
-                        <form class="mt-3">
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fas fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <h3 class="text-white mb-4">
+                <i class="fas fa-shield-alt me-2"></i>WEALTH GUARD
+              </h3>
+              <p>
+                Your trusted partner for comprehensive insurance solutions
+                tailored to your unique needs.
+              </p>
+              <div class="footer-social mt-4">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
             </div>
-            
-            <hr class="mt-4 mb-4 border-top border-secondary">
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-md-0">&copy; 2025 Wealth Guard Insurance Agency. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-inline text-md-end mb-0">
-                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
-                        <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
-                    </ul>
-                </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#home"
+                    ><i class="fas fa-angle-right me-2"></i>Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#about"
+                    ><i class="fas fa-angle-right me-2"></i>About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#services"
+                    ><i class="fas fa-angle-right me-2"></i>Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#testimonials"
+                    ><i class="fas fa-angle-right me-2"></i>Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact"
+                    ><i class="fas fa-angle-right me-2"></i>Contact</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links">
+              <h4>Our Services</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Life Insurance</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Investment Plans</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Retirement Plans</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Health Insurance</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Auto Insurance</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-angle-right me-2"></i>Home Insurance</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-newsletter">
+              <h4>Subscribe to Our Newsletter</h4>
+              <p>
+                Get the latest updates on insurance products and financial
+                planning tips.
+              </p>
+              <form class="mt-3">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+
+        <hr class="mt-4 mb-4 border-top border-secondary" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-md-0">
+              &copy; 2025 Wealth Guard Insurance Agency. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Service</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/contact-form-script.js"></script>
+  </body>
 </html>
